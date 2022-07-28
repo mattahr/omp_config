@@ -112,7 +112,7 @@
             "properties": {
               "display_mode": "files",
               "fetch_version": true,
-              "fetch_virtual_env": false
+              "fetch_virtual_env": true
             },
             "style": "plain",
             "template": "\ue235 ",
