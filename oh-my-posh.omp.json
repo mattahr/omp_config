@@ -8,13 +8,20 @@
                     "background": "p:darkblue",
                     "foreground": "p:screengreen",
                     "leading_diamond": "\ue0b6",
+                    "type": "os",
+                    "style": "plain",
+                    "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} "
+                },
+                {
+                    "background": "p:darkblue",
+                    "foreground": "p:screengreen",
                     "properties": {
                         "display_host": false
                     },
                     "style": "diamond",
-                    "template": " {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }} ",
-                    "trailing_diamond": "\ue0b0",
-                    "type": "session"
+                    "template": "{{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }}@{{ .HostName }} ",
+                    "type": "session",
+                    "trailing_diamond": "\ue0b0"
                 },
                 {
                     "background": "p:orange",
