@@ -10,7 +10,7 @@
                     "leading_diamond": "\ue0b6",
                     "type": "os",
                     "style": "plain",
-                    "template": " {{ .Icon }}{{ if .WSL }} (WSL){{ end }} "
+                    "template": " {{ .Icon }}{{ if .WSL }} [WSL]{{ end }} "
                 },
                 {
                     "background": "p:darkblue",
