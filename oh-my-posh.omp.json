@@ -19,6 +19,7 @@
           {
             "background": "p:orange",
             "foreground": "p:white",
+            "powerline_symbol": "\ue0b0",
             "properties": {
               "home_icon": "~",
               "style": "folder"
