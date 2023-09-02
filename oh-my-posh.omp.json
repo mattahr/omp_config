@@ -56,7 +56,7 @@
                     },
                     "style": "powerline",
                     "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
-                    "trailing_diamond": "\ue0b4",
+                    "trailing_diamond": "\ue0b0",
                     "type": "git"
                 },
                 {
@@ -82,7 +82,7 @@
                     },
                     "style": "diamond",
                     "template": " {{ if gt .Code 0 }}\uf00d{{ else }}\uf00c{{ end }} ",
-                    "trailing_diamond": "\ue0b4",
+                    "trailing_diamond": "\ue0b0",
                     "type": "exit"
                 }
             ],
@@ -122,7 +122,7 @@
                         "fetch_virtual_env": true
                     },
                     "style": "diamond",
-                    "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
+                    "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
                     "trailing_diamond": "<transparent,background>\ue0b2</>",
                     "type": "python"
                 },
@@ -131,7 +131,7 @@
                     "foreground": "p:screengreen",
                     "leading_diamond": "\ue0b2",
                     "style": "diamond",
-                    "template": "<b>{{ .Name }}</b>",
+                    "template": "<b> {{ .Name }} </b>",
                     "trailing_diamond": "<transparent,background>\ue0b2</>",
                     "type": "shell"
                 },
@@ -140,8 +140,7 @@
                     "foreground": "p:screengreen",
                     "leading_diamond": "\ue0b2",
                     "style": "diamond",
-                    "template": "<b>{{ .CurrentDate | date \"15:04:05\" }}</b>",
-                    "trailing_diamond": "\ue0b4",
+                    "template": "<b> {{ .CurrentDate | date \"15:04\" }} </b>",
                     "type": "time"
                 }
             ],
