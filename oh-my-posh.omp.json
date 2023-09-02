@@ -24,17 +24,18 @@
                     "trailing_diamond": "\ue0b0"
                 },
                 {
+                    "leading_diamond": "<transparent,background>\ue0b0</>",
                     "background": "p:orange",
-                    "foreground": "p:white",
-                    "powerline_symbol": "\ue0b0",
+                    "foreground": "p:black",
                     "properties": {
                         "folder_separator_icon": " \ue0b1 ",
                         "home_icon": "~",
                         "style": "folder"
                     },
-                    "style": "powerline",
+                    "style": "diamond",
                     "template": " \uea83  {{ .Path }} ",
-                    "type": "path"
+                    "type": "path",
+                    "trailing_diamond": "\ue0b0"
                 },
                 {
                     "background": "#fffb38",
