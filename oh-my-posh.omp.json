@@ -35,7 +35,7 @@
                     "style": "diamond",
                     "template": " \uea83  {{ .Path }} ",
                     "type": "path",
-                    "trailing_diamond": "\ue0b0"
+                    "trailing_diamond": "<transparent,background>\ue0b0</>"
                 },
                 {
                     "background": "p:orange",
