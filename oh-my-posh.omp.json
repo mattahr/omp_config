@@ -24,7 +24,7 @@
                     "trailing_diamond": "\ue0b0"
                 },
                 {
-                    "leading_diamond": "\ue0b0",
+                    "leading_diamond": "<transparent,background>\ue0b0</>",
                     "background": "p:orange",
                     "foreground": "p:black",
                     "properties": {
